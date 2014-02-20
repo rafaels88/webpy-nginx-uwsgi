@@ -8,10 +8,9 @@ PROJECT_NAME = 'site'
 PROJECT_PATH = '/var/www/{0}'.format(PROJECT_NAME)
 
 def prod():
-    env.hosts = ['54.201.154.206']
+    env.hosts = ['0.0.0.0']
     env.name = 'prod'
-    env.user = 'ubuntu'
-    env.key_filename = "deploy/site.pem"
+    env.user = 'deploy_user'
 
 def initial_setup():
     create_project_structure()
