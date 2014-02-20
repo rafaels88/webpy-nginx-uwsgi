@@ -1,0 +1,3 @@
+web.py==0.37
+uWSGI==2.0.1
+Fabric==1.8.1
